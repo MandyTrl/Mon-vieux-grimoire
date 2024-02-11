@@ -1,30 +1,31 @@
 .BookItem {
-	display: flex;
-	justify-items: start;
-	align-items: start;
 	text-decoration: none;
 	color: inherit;
-	max-width: 360px;
-	width: 80%;
+	max-width: 400px;
+	width: 30%;
 	align-items: center;
-	margin-bottom: 85px;
+	margin-bottom: 45px;
 }
 
 .BookItem article {
 	display: flex;
-	align-items: center;
+	justify-content: center;
+	align-items: start;
 }
 
 .BookItem img {
 	border-radius: 8px;
 }
 
-.BookItem h2 {
-	font-size: 15px;
-	font-weight: 500;
+.BookItem h2,
+h3 {
+	font-size: 16px;
 	font-family: 'DM Sans', sans-serif;
 	margin-bottom: 10px;
 	text-transform: uppercase;
+	letter-spacing: 0.7px;
+	border-bottom: #d9a963 1px solid;
+	padding-bottom: 5px;
 }
 
 .BookImage {
@@ -37,38 +38,41 @@
 
 .BookImage:hover {
 	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-	transform: scale(1.1);
+	transform: scale(1.06);
 }
 
-.BookItem h3 {
-	font-size: 18px;
-	font-weight: 700;
-	font-family: 'Libre Baskerville', serif;
-	margin-bottom: 10px;
-}
 .BookItem p {
 	font-family: 'DM Sans', sans-serif;
 	font-size: 14px;
 	color: #796157;
 	margin-bottom: 10px;
+	padding-left: 5px;
 }
+
+.BookItem p span {
+	font-size: 12px;
+	color: #4e4e4e;
+}
+
 .full {
 	color: #d9a963;
 	font-size: 23px;
 }
+
 .empty {
 	color: #f2e3ce;
 	font-size: 23px;
 }
+
 .BookInfo {
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	margin-left: 18px;
+	margin-left: 20px;
 }
+
 .Rating {
 	display: flex;
-	justify-content: space-between;
 	margin-bottom: 20px;
 }
 

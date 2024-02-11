@@ -3,6 +3,7 @@
 	display: flex;
 	align-items: stretch;
 }
+
 .BookContainer {
 	background-color: #ffffff;
 	margin: auto;
@@ -17,6 +18,7 @@
 	background-color: #f2e3ce;
 	height: 1px;
 }
+
 .Deleted {
 	font-family: 'Libre Baskerville', serif;
 	padding-block: 5em;
@@ -36,6 +38,7 @@
 	color: #796157;
 	padding-bottom: 15px;
 }
+
 .Deleted p {
 	font-size: 16px;
 	margin-bottom: 20px;
@@ -44,6 +47,7 @@
 .Deleted img {
 	margin-bottom: 75px;
 }
+
 .BookImage {
 	width: calc(40% - 80px);
 	background-position: center;
@@ -51,11 +55,13 @@
 	margin-right: 80px;
 	margin-left: 120px;
 }
+
 .Book img {
 	width: 40%;
 	padding-right: 80px;
 	padding-left: 120px;
 }
+
 .BookContent {
 	width: 60%;
 	display: flex;
@@ -63,7 +69,9 @@
 }
 
 .BookInfo {
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 	width: 100%;
 	max-width: 465px;
 	grid-template-rows: 125px 65px 65px;
@@ -72,19 +80,21 @@
 	gap: 1px;
 }
 
-.BookInfo > * {
-	outline: 1px solid #000;
-	display: flex;
-	align-items: center;
-}
-
 .BookInfo h1 {
+	background-color: #f2e3ce;
 	font-size: 28px;
-	padding-left: 20px;
+	padding: 30px 20px;
 }
 
-.Author {
-	padding-left: 20px;
+.BookIntro {
+	border: #f2e3ce 1px solid;
+	border-top: none;
+	padding: 15px;
+}
+
+.BookIntro p {
+	border-bottom: #f2e3ce 1px solid;
+	padding: 15px 0;
 }
 
 .PublishDate,
@@ -94,9 +104,14 @@
 }
 
 .Rating {
-	grid-column-start: 2;
-	grid-column-end: 4;
+	display: flex;
+	align-items: center;
 }
+
+.Rating p {
+	border: none;
+}
+
 .Rating div {
 	margin-right: 20px;
 }

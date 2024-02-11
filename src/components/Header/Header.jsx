@@ -16,7 +16,7 @@ function Header({ user, setUser }) {
 			<div className="container">
 				<p>
 					<NavLink to="/" className={styles.homeLink}>
-						Mon vieux grimoire
+						ᗰon vieux grimoire
 					</NavLink>
 				</p>
 				<ul>

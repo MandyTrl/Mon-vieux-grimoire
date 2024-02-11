@@ -164,6 +164,11 @@ code {
 	color: #796157;
 	font-family: 'DM Sans', sans-serif;
 	text-decoration: none;
+	transition: color ease-in 0.3s;
+}
+
+.backArrow:hover {
+	color: #2c1810;
 }
 
 h1 {
