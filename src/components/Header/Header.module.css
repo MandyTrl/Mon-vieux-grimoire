@@ -1,50 +1,106 @@
-.Header{
-    font-family: 'Libre Baskerville', serif;
-    background-color: #FFFFFF;
-    min-height: 91px;
-    display: flex;
-    align-items: center;
+.Header {
+	font-family: 'Libre Baskerville', serif;
+	background-color: #ffffff;
+	min-height: 91px;
+	display: flex;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	z-index: 10;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 
 .Header div {
-    display: flex;
-    justify-content: space-between;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.Header p {
-    font-size: 20px;
+.Header p a {
+	font-style: italic;
+	font-size: 25px;
+	color: #796157;
+	text-decoration: none;
+	transition: all 0.5s ease-in;
+}
+
+.Header p a:hover {
+	opacity: 90%;
+	letter-spacing: 0.3px;
+}
+
+.Header p a:active {
+	color: #796157;
+	text-decoration: none;
 }
 
 .Header ul {
-    display: flex;
+	display: inline-block;
 }
 
 .Header ul li {
-    padding-inline: 20px;
-    list-style-type: none;
+	text-align: right;
+	padding: 2px;
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 11px;
+	letter-spacing: 0.5px;
+	font-weight: 600;
 }
 
 .Header ul li a {
-    text-decoration: none;
-    color: black ;
+	text-decoration: none;
+	color: black;
+	border-right: 1px solid #442f27;
+	padding: 6px;
+	transition: all 0.5s ease-in;
+}
+
+.Header ul li a:hover {
+	text-decoration: none;
+	color: #442f27;
+	font-size: 14px;
 }
 
 .Header a.activeLink {
-    font-weight: bold;
+	color: #796157;
+	font-size: 14px;
+	padding: 10px 6px;
 }
 
+.Header ul span {
+	text-decoration: none;
+	color: black;
+	border-right: 1px solid #442f27;
+	padding: 6px;
+	transition: all 0.5s ease-in;
+	cursor: pointer;
+}
+
+.Header ul span:hover {
+	text-decoration: none;
+	color: #442f27;
+	font-size: 14px;
+}
+
+/* .Header logout.activeLink {
+	color: #796157;
+	font-size: 14px;
+	padding: 10px 6px;
+} */
+
 @media all and (max-width: 600px) {
-    .Header div {
-        flex-direction: column;
-        align-items: center;
-    }
+	.Header div {
+		flex-direction: column;
+		align-items: center;
+	}
 
-    .Header img {
-        margin-top: 20px;
-        width: 50%;
-    }
+	.Header img {
+		margin-top: 20px;
+		width: 50%;
+	}
 
-    .Header ul li {
-        padding-block: 20px;
-    }
+	.Header ul li {
+		padding-block: 20px;
+	}
 }
