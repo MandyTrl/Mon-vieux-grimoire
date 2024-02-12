@@ -25,11 +25,16 @@
 	object-fit: cover;
 	object-position: center;
 }
+
 .Form label {
 	width: 100%;
 }
+
 .Form label p {
-	margin-bottom: 15px;
+	margin-bottom: 3px;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
 }
 
 input {
@@ -69,18 +74,32 @@ input:focus {
 	display: flex;
 	align-items: center;
 	background-color: #fff;
-	padding: 43px 81px;
+	padding: 25px;
 	border: dashed 1px #d9a963;
 	margin-bottom: 40px;
+	border-radius: 20px;
+	height: 150px;
+	width: auto;
 }
 
 .AddImage img {
+	height: 100%;
+	width: fit-content;
 	margin-right: 20px;
+	box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+		rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
 .AddImage p {
 	color: #929292;
-	font-size: 16px;
+	font-size: 12px;
+	transition: all 0.3s ease-in;
+	padding-left: 8px;
+}
+.AddImage p:hover {
+	cursor: pointer;
+	color: #4a352c;
+	font-size: 13px;
 }
 
 @media all and (max-width: 1300px) {

@@ -56,16 +56,18 @@ h3 {
 
 .full {
 	color: #d9a963;
-	font-size: 23px;
+	font-size: 20px;
 }
 
 .empty {
 	color: #f2e3ce;
-	font-size: 23px;
+	font-size: 20px;
 }
 
 .BookInfo {
 	display: flex;
+	height: 250px;
+	justify-content: space-around;
 	flex: 1;
 	flex-direction: column;
 	margin-left: 20px;
@@ -74,6 +76,20 @@ h3 {
 .Rating {
 	display: flex;
 	margin-bottom: 20px;
+}
+
+.BookItem .Category {
+	width: 100%;
+	margin-top: 7px;
+}
+
+.BookItem .Year {
+	align-self: flex-end;
+	border-left: #d9a963 1px solid;
+	border-right: #d9a963 1px solid;
+	padding: 5px 7px;
+	border-radius: 5px;
+	width: fit-content;
 }
 
 @media all and (max-width: 600px) {

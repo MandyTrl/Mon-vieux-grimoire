@@ -26,15 +26,17 @@ function BookItem({ book, size }) {
 					alt={`${book.title}, ${book.author} - ${book.year}`}
 				/>
 				<div className={styles.BookInfo}>
-					<div className={styles.Rating}>
-						{displayStars(book.averageRating)}
+					<div>
+						{title}
+						<div className={styles.Rating}>
+							{displayStars(book.averageRating)}
+						</div>
+						<p>
+							<span>par</span> {book.author}
+						</p>
+						<p className={styles.Category}>{book.genre}</p>
 					</div>
-					{title}
-					<p>
-						<span>par</span> {book.author}
-					</p>
-					<p>{book.genre}</p>
-					<p>{book.year}</p>
+					<p className={styles.Year}>{book.year}</p>
 				</div>
 			</article>
 		</Link>

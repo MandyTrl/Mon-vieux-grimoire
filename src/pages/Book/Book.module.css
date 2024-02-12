@@ -150,26 +150,63 @@
 	display: flex;
 	margin-bottom: 22px;
 }
+
 .Owner {
 	color: #2c1810;
-	font-family: 'DM Sans', sans-serif;
-	padding: 20px;
+	font-style: italic;
+	padding: 25px 0;
 }
 
 .Owner p {
-	margin-bottom: 20px;
+	margin-bottom: 18px;
 }
 
 .Owner a {
-	color: #929292;
-	margin-right: 20px;
+	color: #2c1810;
+	background-color: #d9a963;
+	text-decoration: none;
+	padding: 7px 8px 5px 8px;
+	border-radius: 5px;
+	border: #d9a963 1px solid;
+	font-size: 11px;
+	transition: 0.5s;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	margin-right: 8px;
+	font-family: 'DM Sans', sans-serif;
+	font-style: normal;
+}
+
+.Owner a:hover {
+	cursor: pointer;
+	text-decoration: none;
+	background-color: #b99056;
+	color: #fff;
+	transition: 0.5s;
 }
 
 .Owner span {
-	color: #d70000;
-	cursor: pointer;
-	text-decoration: underline;
+	color: #000000;
+	border: #ff4d4d 1px solid;
+	text-decoration: none;
+	padding: 7px 8px 5px 8px;
+	border-radius: 5px;
+	font-size: 11px;
+	transition: 0.5s;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	font-family: 'DM Sans', sans-serif;
+	font-style: normal;
 }
+
+.Owner span:hover {
+	cursor: pointer;
+	text-decoration: none;
+	background-color: #ff0000;
+	color: #fff;
+	transition: 0.5s;
+}
+
 @media all and (max-width: 1080px) {
 	.Book {
 		flex-direction: column;
