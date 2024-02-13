@@ -73,6 +73,7 @@ input:focus {
 .AddImage {
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	background-color: #fff;
 	padding: 25px;
 	border: dashed 1px #d9a963;
@@ -82,7 +83,7 @@ input:focus {
 	width: auto;
 }
 
-.AddImage img {
+.AddImage .BookCover {
 	height: 100%;
 	width: fit-content;
 	margin-right: 20px;
@@ -94,12 +95,22 @@ input:focus {
 	color: #929292;
 	font-size: 12px;
 	transition: all 0.3s ease-in;
-	padding-left: 8px;
+	margin-left: 14px;
 }
+
 .AddImage p:hover {
 	cursor: pointer;
 	color: #4a352c;
 	font-size: 13px;
+}
+
+.AddImage .AddFile {
+	width: 40px;
+	height: 40px;
+}
+
+.AddImage .AddFile:hover {
+	cursor: pointer;
 }
 
 @media all and (max-width: 1300px) {

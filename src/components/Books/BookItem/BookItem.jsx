@@ -32,11 +32,18 @@ function BookItem({ book, size }) {
 							{displayStars(book.averageRating)}
 						</div>
 						<p>
-							<span>par</span> {book.author}
+							<span>par</span>
+							{book.author}
 						</p>
-						<p className={styles.Category}>{book.genre}</p>
+						<p className={styles.Category}>
+							<span>genre</span>
+							{book.genre}
+						</p>
 					</div>
-					<p className={styles.Year}>{book.year}</p>
+					<p className={styles.Year}>
+						<span>paru en</span>
+						{book.year}
+					</p>
 				</div>
 			</article>
 		</Link>

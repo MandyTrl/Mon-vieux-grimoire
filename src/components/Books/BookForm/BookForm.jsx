@@ -105,12 +105,16 @@ function BookForm({ book, validate }) {
 				<div className={styles.AddImage}>
 					{filePreview || book?.imageUrl ? (
 						<>
-							<img src={filePreview ?? book?.imageUrl} alt="preview" />
+							<img
+								src={filePreview ?? book?.imageUrl}
+								alt="preview"
+								className={styles.BookCover}
+							/>
 							<p>Modifier</p>
 						</>
 					) : (
 						<>
-							<img src={addFileIMG} alt="Add file" />
+							<img src={addFileIMG} alt="Add file" className={styles.AddFile} />
 							<p>Ajouter une image</p>
 						</>
 					)}

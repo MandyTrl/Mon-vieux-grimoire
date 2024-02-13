@@ -45,13 +45,18 @@ h3 {
 	font-family: 'DM Sans', sans-serif;
 	font-size: 14px;
 	color: #796157;
-	margin-bottom: 10px;
-	padding-left: 5px;
+	margin-bottom: 14px;
 }
 
 .BookItem p span {
 	font-size: 12px;
-	color: #4e4e4e;
+	color: #2f2f2f;
+	margin-right: 8px;
+}
+
+.BookInfo {
+	border-left: #f2e3ce 1px solid;
+	padding-left: 10px;
 }
 
 .full {
@@ -67,7 +72,6 @@ h3 {
 .BookInfo {
 	display: flex;
 	height: 250px;
-	justify-content: space-around;
 	flex: 1;
 	flex-direction: column;
 	margin-left: 20px;
@@ -81,15 +85,6 @@ h3 {
 .BookItem .Category {
 	width: 100%;
 	margin-top: 7px;
-}
-
-.BookItem .Year {
-	align-self: flex-end;
-	border-left: #d9a963 1px solid;
-	border-right: #d9a963 1px solid;
-	padding: 5px 7px;
-	border-radius: 5px;
-	width: fit-content;
 }
 
 @media all and (max-width: 600px) {
